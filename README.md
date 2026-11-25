@@ -2,12 +2,19 @@
 
 English | [简体中文](README_CN.md)
 
+> [!CAUTION]
+> <img src="https://lipoly.ink/assets/badges/llmWarn.svg" alt="This project contains unaudited AI generated code" width="200">
+>
+> This project includes reverse-engineered reimplementations that cannot currently be audited.
+
 A bare-metal C++17 / C11 PlatformIO template and BSP (`mpk4-bsp`) for writing custom firmware on the **Akai Professional MPK mini IV** (`AT32F405RCT7` @ `216 MHz`, `256 KiB` flash, `96 KiB` SRAM, USB `09E8:005D`). Adapted and patched from the reverse-engineering work in [open-mpk4](https://github.com/giusmarci/open-mpk4).
 
 The starter app in [src/main.cpp](src/main.cpp) centers `hello world!` on the `160x80` screen and sets up the main loop for panel inputs and USB MIDI.
 
 > [!CAUTION]
 > **Disclaimer & Hardware Risk:** Flashing custom bare-metal firmware carries inherent risks. Although the stock bootloader and fault-recovery paths reduce the chance of bricking, bugs in your code, misconfigured peripherals/clocks, power loss during flashing, or flash wear can still cause data loss, malfunction, or permanent hardware damage, and may void your manufacturer warranty.
+>
+> **Trademarks & Non-Affiliation:** This is an independent open-source project and is not affiliated with, endorsed by, sponsored by, or supported by **Akai Professional** or **inMusic Brands, Inc.** `"Akai Professional"`, `"MPK"`, and `"MPK mini"` are trademarks of inMusic Brands, Inc. and are used here solely to identify the target hardware for interoperability. This repository and its releases contain **no** Akai firmware, bootloader, or other proprietary assets; stock images are fetched or provided by the user and assembled locally on the user's own machine.
 >
 > This project is provided **"as is"** without any warranty of any kind. Back up your presets before flashing, and proceed entirely at your own risk.
 

@@ -2,6 +2,11 @@
 
 [English](README.md) | 简体中文
 
+> [!CAUTION]
+> <img src="https://lipoly.ink/assets/badges/llmWarn.svg" alt="This project contains unaudited AI generated code" width="200">
+> 
+> 项目包含部分逆向重实现内容, 暂无法审查
+
 适用于 **Akai Professional MPK mini IV** 的 PlatformIO 裸机开发模板与板级支持包（`mpk4-bsp`），基于 [open-mpk4](https://github.com/giusmarci/open-mpk4) 中的逆向成果整理修补而成。目标芯片为 `AT32F405RCT7`（`216 MHz`、`256 KiB` Flash、`96 KiB` SRAM，USB VID/PID `09E8:005D`）。
 
 默认工程在 [src/main.cpp](src/main.cpp) 里初始化板卡和看门狗，在 `160x80` 屏幕上居中画出一个 `hello world!`，并给出面板输入与 USB MIDI 的主循环骨架。
@@ -9,7 +14,9 @@
 > [!CAUTION]
 > **免责声明与设备风险警告：** 刷写第三方裸机固件存在一定风险。虽然原厂 Bootloader 与异常处理机制可以降低变砖概率，但不当的外设/时钟配置、代码缺陷、刷机断电或频繁擦写 Flash 仍可能导致数据丢失、功能异常甚至永久性的硬件损坏，并可能使官方保修失效。
 >
-> 本项目按**“现状”（AS IS）**提供，不附带任何明示或暗示的担保。刷机前请务必备份重要预设，使用本项目所产生的任何后果与风险均由使用者自行承担。
+> **独立项目与知识产权声明：** 本项目为个人独立开源项目，与 **Akai Professional** 或 **inMusic Brands, Inc.** 无任何隶属、授权、赞助或官方支持关系；文中提及的 `Akai Professional`、`MPK`、`MPK mini` 等商标均归 inMusic Brands, Inc. 所有，仅用于指明目标硬件与兼容性。本仓库及任何发行物**均不包含** Akai 原厂固件、Bootloader 或受版权保护的资源，相关固件数据仅在用户本地由用户自行提供的原厂镜像或官方公开安装包按需提取拼接。
+>
+> 本项目按 **“现状”（AS IS）** 提供，不附带任何明示或暗示的担保。刷机前请务必备份重要预设，使用本项目所产生的任何后果与风险均由使用者自行承担。
 
 ## 环境要求
 
