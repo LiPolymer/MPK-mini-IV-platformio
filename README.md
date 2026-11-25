@@ -6,6 +6,11 @@ A bare-metal C++17 / C11 PlatformIO template and BSP (`mpk4-bsp`) for writing cu
 
 The starter app in [src/main.cpp](src/main.cpp) centers `hello world!` on the `160x80` screen and sets up the main loop for panel inputs and USB MIDI.
 
+> [!CAUTION]
+> **Disclaimer & Hardware Risk:** Flashing custom bare-metal firmware carries inherent risks. Although the stock bootloader and fault-recovery paths reduce the chance of bricking, bugs in your code, misconfigured peripherals/clocks, power loss during flashing, or flash wear can still cause data loss, malfunction, or permanent hardware damage, and may void your manufacturer warranty.
+>
+> This project is provided **"as is"** without any warranty of any kind. Back up your presets before flashing, and proceed entirely at your own risk.
+
 ## Prerequisites
 
 - [PlatformIO](https://platformio.org/)
