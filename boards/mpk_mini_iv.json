@@ -1,0 +1,22 @@
+{
+  "name": "Akai MPK mini IV (OPEN MPK4 BSP)",
+  "vendor": "Akai Professional",
+  "url": "https://github.com/LiPolymer/MPK-mini-IV-platformio",
+  "build": {
+    "core": "ArteryTek AT32",
+    "cpu": "cortex-m4",
+    "f_cpu": "216000000L",
+    "mcu": "AT32F405RCT7",
+    "product_line": "AT32F405xC",
+    "bsp": "AT32F402_405",
+    "variant": "AT32F405RCT7",
+    "fpu": "Yes"
+  },
+  "frameworks": [],
+  "upload": {
+    "maximum_size": 131072,
+    "maximum_ram_size": 98304,
+    "protocol": "custom",
+    "protocols": ["custom"]
+  }
+}

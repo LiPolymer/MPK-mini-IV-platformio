@@ -1,0 +1,40 @@
+MPK mini IV Application Template (PlatformIO)
+PlatformIO application template and BSP for the Akai Professional MPK mini IV.
+Licensed under the MIT License (see LICENSE), except for the third-party components listed below.
+
+Upstream project
+----------------
+open-mpk4 (github.com/giusmarci/open-mpk4)
+  MIT License. Copyright (c) 2026 Gius.Marci.
+  Adapted and patched from its reverse-engineering work, core BSP/HAL (lib/mpk4-bsp), linker script (ld/app.ld),
+  and base flashing/layout tools (tools/).
+
+Trademarks and affiliation
+--------------------------
+This is an independent open-source project by LiPolymer. It is not affiliated with, endorsed by, sponsored by,
+or supported by Akai Professional or inMusic Brands, Inc. "Akai Professional", "MPK", and "MPK mini" are
+trademarks of inMusic Brands, Inc.; they are used here solely to identify the hardware this firmware targets.
+
+Akai's firmware
+---------------
+This repository and its releases contain no Akai firmware, bootloader, or other Akai proprietary files.
+The flashing tools assemble a complete image locally on your computer from Akai's stock firmware image,
+which tools/fetch_stock.py retrieves from Akai's public installer (or from a local file you supply) and
+verifies against pinned SHA-256 checksums.
+
+Third-party code (vendor)
+-------------------------
+TinyUSB 0.21.0 (lib/mpk4-bsp/vendor/tinyusb, github.com/hathach/tinyusb)
+  MIT License. Copyright (c) 2012-2026, hathach (tinyusb.org) and contributors.
+  Full text: lib/mpk4-bsp/vendor/tinyusb/LICENSE. Individual files carry their own copyright lines.
+
+ArteryTek AT32F402/405 firmware library v2.1.5 (lib/mpk4-bsp/vendor/at32f402_405,
+github.com/ArteryTek/AT32F402_405_Firmware_Library)
+  BSD 3-Clause License. Copyright (c) 2022, Artery-MCU.
+  Full text: lib/mpk4-bsp/vendor/at32f402_405/LICENSE.
+  The driver files also carry Artery Technology's own notice in their headers.
+
+Arm CMSIS core headers (lib/mpk4-bsp/vendor/at32f402_405/cmsis: cmsis_compiler.h, cmsis_gcc.h,
+cmsis_version.h, core_cm4.h, mpu_armv7.h)
+  Apache License 2.0. Copyright (c) 2009-2022 Arm Limited.
+  Full text: lib/mpk4-bsp/vendor/at32f402_405/cmsis/LICENSE-Apache-2.0.

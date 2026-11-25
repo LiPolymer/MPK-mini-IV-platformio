@@ -1,0 +1,40 @@
+{
+  "name": "mpk4-bsp",
+  "version": "1.0.0",
+  "description": "Board support for the MPK mini IV on the AT32F405",
+  "license": "MIT",
+  "build": {
+    "srcDir": ".",
+    "srcFilter": [
+      "-<*>",
+      "+<src/*.cpp>",
+      "+<src/*.c>",
+      "+<src/hal/*.c>",
+      "+<vendor/tinyusb/src/tusb.c>",
+      "+<vendor/tinyusb/src/common/tusb_fifo.c>",
+      "+<vendor/tinyusb/src/device/usbd.c>",
+      "+<vendor/tinyusb/src/class/midi/midi_device.c>",
+      "+<vendor/tinyusb/src/class/hid/hid_device.c>",
+      "+<vendor/tinyusb/src/portable/synopsys/dwc2/dcd_dwc2.c>",
+      "+<vendor/tinyusb/src/portable/synopsys/dwc2/dwc2_common.c>",
+      "+<vendor/at32f402_405/cmsis/system_at32f402_405.c>",
+      "+<vendor/at32f402_405/drivers/src/at32f402_405_crm.c>",
+      "+<vendor/at32f402_405/drivers/src/at32f402_405_gpio.c>",
+      "+<vendor/at32f402_405/drivers/src/at32f402_405_dma.c>",
+      "+<vendor/at32f402_405/drivers/src/at32f402_405_adc.c>",
+      "+<vendor/at32f402_405/drivers/src/at32f402_405_spi.c>",
+      "+<vendor/at32f402_405/drivers/src/at32f402_405_tmr.c>",
+      "+<vendor/at32f402_405/drivers/src/at32f402_405_usart.c>",
+      "+<vendor/at32f402_405/drivers/src/at32f402_405_misc.c>",
+      "+<vendor/at32f402_405/drivers/src/at32f402_405_pwc.c>"
+    ],
+    "flags": [
+      "-D CFG_TUSB_MCU=OPT_MCU_AT32F402_405",
+      "-I src/hal",
+      "-I vendor/tinyusb/src",
+      "-I vendor/at32f402_405/cmsis",
+      "-I vendor/at32f402_405/drivers/inc"
+    ],
+    "libArchive": false
+  }
+}
